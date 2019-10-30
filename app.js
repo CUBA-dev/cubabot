@@ -24,12 +24,10 @@ class KOTController extends TelegramBaseController {
   }
 
   gitAction(scope) {
-    const msg = [
-      "Contribua para este belíssimo projeto! https://github.com/CUBA-dev/cubabot"
-    ];
+    const msg =
+      "Contribua para este belíssimo projeto! https://github.com/CUBA-dev/cubabot";
 
-    const index = Math.floor(Math.random() * Math.floor(msg.length));
-    scope.sendMessage(msg[index]);
+    scope.sendMessage(msg);
   }
 
   get routes() {
