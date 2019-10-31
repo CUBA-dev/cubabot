@@ -24,9 +24,7 @@ class KOTController extends TelegramBaseController {
   }
 
   kotAllAction(scope) {
-    msg.forEach(element => {
-      scope.sendMessage(element);
-    });
+    scope.sendMessage(msg.join(" \n "));
   }
 
   gitAction(scope) {
