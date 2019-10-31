@@ -4,8 +4,7 @@
   "description": "Remembering how KOT is bad",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "postinstall": "npm run build"
+    "start": "node app.js"
   },
   "author": "tfbbueno",
   "license": "ISC",
