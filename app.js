@@ -7,7 +7,7 @@ const { TextCommand } = Telegram;
 const msg = [
   "KOT é muito ruim!",
   "Vai dar tudo certo... menos pra quem joga KOT!",
-  "Eu ganhei em último lugar!!! 🥇",
+  "Eu ganhei em último lugar!!! 🏅",
   "HOJE TINHA ENCONTRO??????? @Luiz",
   "KD o veneno? 🥤 ",
   "Sayuri está Sayurando",
