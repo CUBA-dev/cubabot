@@ -14,7 +14,7 @@ class KOTController extends TelegramBaseController {
       "HOJE TINHA ENCONTRO??????? @Luiz",
       "KD o veneno?",
       "Sayuri está Sayurando",
-      "OLHA A VELAAAAAAA \u{U+1F525}!",
+      "OLHA A VELAAAAAAA!",
       "Pq manda audio, Aline?",
       "Vim lá do Tijucal só pra ganhar do Luiz"
     ];
