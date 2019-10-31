@@ -7,11 +7,11 @@ const { TextCommand } = Telegram;
 const msg = [
   "KOT é muito ruim!",
   "Vai dar tudo certo... menos pra quem joga KOT!",
-  "Eu ganhei em último lugar!!!",
+  "Eu ganhei em último lugar!!! 🥇",
   "HOJE TINHA ENCONTRO??????? @Luiz",
-  "KD o veneno?",
+  "KD o veneno? 🥤 ",
   "Sayuri está Sayurando",
-  "OLHA A VELAAAAAAA!",
+  "OLHA A VELAAAAAAA 🕯️ 🕯️ 🕯️ 🕯️!",
   "Pq manda audio, Aline?",
   "Vim lá do Tijucal só pra ganhar do Luiz"
 ];
@@ -23,8 +23,8 @@ class KOTController extends TelegramBaseController {
     scope.sendMessage(msg[index]);
   }
 
-  kotAllAction(scope) {
-    scope.sendMessage(msg.join(" \n "));
+  AllKotAction(scope) {
+    scope.sendMessage(`**Todas as mensagens de CUBA:** \n ${msg.join(" \n")}`);
   }
 
   gitAction(scope) {
@@ -36,11 +36,11 @@ class KOTController extends TelegramBaseController {
   get routes() {
     return {
       kot: "kotAction",
-      kotAll: "kotAllAction",
+      all: "AllKotAction",
       git: "gitAction"
     };
   }
 }
 chatbot.router.when(new TextCommand("/kot", "kot"), new KOTController());
-chatbot.router.when(new TextCommand("/kotAll", "kotAll"), new KOTController());
+chatbot.router.when(new TextCommand("/all", "all"), new KOTController());
 chatbot.router.when(new TextCommand("/git", "git"), new KOTController());
