@@ -12,7 +12,7 @@ const msg = [
   "KD o veneno? 🥤 ",
   "Sayuri está Sayurando",
   "OLHA A VELAAAAAAA 🕯️ 🕯️ 🕯️ 🕯️!",
-  "Pq manda audio, Aline?",
+  "Pq manda audio, Alinne?",
   "Vim lá do Tijucal só pra ganhar do Luiz"
 ];
 
