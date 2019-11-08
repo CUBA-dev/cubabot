@@ -13,7 +13,8 @@ const msg = [
   "Sayuri está Sayurando",
   "OLHA A VELAAAAAAA 🕯️ 🕯️ 🕯️ 🕯️!",
   "Pq manda audio, Alinne?",
-  "Vim lá do Tijucal só pra ganhar do Luiz"
+  "Vim lá do Tijucal, só pra ganhar do Luiz",
+  "Party Game bom é Party Game pegando fogo :fire:"
 ];
 
 const chatbot = new Telegram.Telegram(process.env.TOKEN);
