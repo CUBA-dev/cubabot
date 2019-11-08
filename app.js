@@ -14,7 +14,7 @@ const msg = [
   "OLHA A VELAAAAAAA 🕯️ 🕯️ 🕯️ 🕯️!",
   "Pq manda audio, Alinne?",
   "Vim lá do Tijucal, só pra ganhar do Luiz",
-  "Party Game bom é Party Game pegando fogo :fire:"
+  "Party Game bom é Party Game pegando fogo 🔥"
 ];
 
 const chatbot = new Telegram.Telegram(process.env.TOKEN);
