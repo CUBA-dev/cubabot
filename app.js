@@ -13,7 +13,9 @@ const msg = [
   "Sayuri está Sayurando",
   "OLHA A VELAAAAAAA 🕯️ 🕯️ 🕯️ 🕯️!",
   "Pq manda audio, Alinne?",
-  "Vim lá do Tijucal só pra ganhar do Luiz"
+  "Vim lá do Tijucal só pra ganhar do Luiz",
+  "Nem precisei sair do Tijucal pra ganhar do Luiz!",
+  "Vou perder, a sorte não está comigo 😰😰😰 - Gustavo, 97 pontos de vitória. "
 ];
 
 const chatbot = new Telegram.Telegram(process.env.TOKEN);
