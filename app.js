@@ -20,7 +20,8 @@ const msg = [
   "Minha jogatina é sagrada!",
   "Esse jogo é tipo War?",
   "Nem precisei sair do Tijucal pra ganhar do Luiz!",
-  "Vou perder, a sorte não está comigo 😰😰😰 - Gustavo, 97 pontos de vitória."
+  "Vou perder, a sorte não está comigo 😰😰😰 - Gustavo, 97 pontos de vitória.",
+  "Não consigo te ouvir aqui do terceiro lugar ¯\_(ツ)_/¯"
 ];
 
 const chatbot = new Telegram.Telegram(process.env.TOKEN);
