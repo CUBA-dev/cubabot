@@ -43,14 +43,21 @@ class KOTController extends TelegramBaseController {
     );
   }
 
+  quintaSerieAction(scope){
+    scope.sendMessage("Ahhhh não, eu não deixavaaaaa");
+  }
+
   get routes() {
     return {
       kot: "kotAction",
       all: "AllKotAction",
-      git: "gitAction"
+      git: "gitAction",
+      quintaserie: "quintaSerieAction"
     };
   }
 }
 chatbot.router.when(new TextCommand("/kot", "kot"), new KOTController());
 chatbot.router.when(new TextCommand("/all", "all"), new KOTController());
 chatbot.router.when(new TextCommand("/git", "git"), new KOTController());
+chatbot.router.when(new TextCommand("/5serie", "quintaserie"), new KOTController());
+
