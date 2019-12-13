@@ -21,7 +21,8 @@ const msg = [
   "Esse jogo é tipo War?",
   "Nem precisei sair do Tijucal pra ganhar do Luiz!",
   "Vou perder, a sorte não está comigo 😰😰😰 - Gustavo, 97 pontos de vitória.",
-  "Não consigo te ouvir aqui do terceiro lugar ¯\\_(ツ)_/¯"
+  "Não consigo te ouvir aqui do terceiro lugar ¯\\_(ツ)_/¯",
+  "GURPS é ruim demais!"
 ];
 
 const chatbot = new Telegram.Telegram(process.env.TOKEN);
