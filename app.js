@@ -8,23 +8,23 @@ const msg = [
   "KOT é muito ruim!",
   "Vai dar tudo certo... menos pra quem joga KOT!",
   "Eu ganhei em último lugar!!! 🏅",
-  "HOJE TINHA ENCONTRO??????? @Luiz",
-  "KD o veneno? 🥤 ",
-  "Sayuri está Sayurando",
+  "HOJE TINHA ENCONTRO??????? @LuizGodinho",
+  "KD o veneno? 🥤",
+  "@SayuriArake está Sayurando ⏰⏰⏰",
   "OLHA A VELAAAAAAA 🕯️ 🕯️ 🕯️ 🕯️!",
-  "Pq manda audio, Alinne?",
-  "Vim lá do Tijucal, só pra ganhar do Luiz",
+  "Pq manda audio, @AlinneBarrozo?",
+  "@ThaisBueno veio lá do Tijucal, só pra ganhar do @LuizGodinho",
   "Party Game bom é Party Game pegando fogo 🔥",
   "Jogar! Eu quero jogar!",
   "São quantos sacos de cimento esse BG?",
   "Minha jogatina é sagrada!",
   "Esse jogo é tipo War?",
-  "Nem precisei sair do Tijucal pra ganhar do Luiz!",
-  "Vou perder, a sorte não está comigo 😰😰😰 - Gustavo, 97 pontos de vitória.",
+  "Nem precisei sair do Tijucal pra ganhar do @LuizGodinho!",
+  "Vou perder, a sorte não está comigo 😰😰😰 - @GustavoJJPrado, 97 pontos de vitória.",
   "Não consigo te ouvir aqui do terceiro lugar ¯\\_(ツ)_/¯",
-  "GURPS é ruim demais!",
-  "Sayuri não TEM competência pra jogar GURPS",
-  "Gustavo tá gustavando."
+  "@GustavoJJPrado tá Gustavando...",
+  "Esperando o @denysaurelio vir jogar com a gente: 💀💀💀💀💀💀💀",
+  "@LuizGodinho está há 0 dias sem comprar boardgames. O seu record é de 2 dias. 💸💸💸"
 ];
 
 const chatbot = new Telegram.Telegram(process.env.TOKEN);
@@ -50,7 +50,32 @@ class KOTController extends TelegramBaseController {
 
   companheirosAction(scope) {
     scope.sendMessage(
-      "ATENÇÃO COMPANHEIRAS E COMPANHEIROS! @ThaisBueno @GustavoJJPrado @AlinneBarrozo @SayuriArake @636091213 (Luiz Godinho) @598709123 (Denys Aurélio) "
+      "ATENÇÃO COMPANHEIRAS E COMPANHEIROS! @ThaisBueno @GustavoJJPrado @AlinneBarrozo @SayuriArake @LuizGodinho @denysaurelio"
+    );
+  }
+
+  gustavandoAction(scope) {
+    scope.sendMessage("@GustavoJJPrado tá Gustavando...");
+  }
+
+  sayurandoAction(scope) {
+    scope.sendMessage("@SayuriArake está Sayurando ⏰⏰⏰");
+  }
+
+  alinneAction(scope) {
+    scope.sendMessage("Pq manda áudio, @AlinneBarrozo? 🎙🎙🎙");
+    gu;
+  }
+
+  denysAction(scope) {
+    scope.sendMessage(
+      "Esperando o @denysaurelio vir jogar com a gente: 💀💀💀💀💀💀💀"
+    );
+  }
+
+  luizAction(scope) {
+    scope.sendMessage(
+      "@LuizGodinho está há 0 dias sem comprar boardgames. O seu record é de 02 dias. 💸💸💸"
     );
   }
 
@@ -60,7 +85,12 @@ class KOTController extends TelegramBaseController {
       all: "AllKotAction",
       git: "gitAction",
       quintaserie: "quintaSerieAction",
-      companheiros: "companheirosAction"
+      companheiros: "companheirosAction",
+      gustavando: "gustavandoAction",
+      sayurando: "sayurandoAction",
+      alinne: "alinneAction",
+      denys: "denysAction",
+      luiz: "luizAction"
     };
   }
 }
@@ -75,5 +105,16 @@ chatbot.router.when(
   new TextCommand("/companheiros", "companheiros"),
   new KOTController()
 );
+chatbot.router.when(
+  new TextCommand("/gustavando", "gustavando"),
+  new KOTController()
+);
+chatbot.router.when(
+  new TextCommand("/sayurando", "sayurando"),
+  new KOTController()
+);
+chatbot.router.when(new TextCommand("/alinne", "alinne"), new KOTController());
+chatbot.router.when(new TextCommand("/denys", "denys"), new KOTController());
 
+// https://www.sitepoint.com/how-to-build-your-first-telegram-chatbot-with-node-js/
 // https://github.com/everyone-bot/everyone-bot
