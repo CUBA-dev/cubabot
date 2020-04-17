@@ -50,7 +50,7 @@ class KOTController extends TelegramBaseController {
 
   companheirosAction(scope) {
     scope.sendMessage(
-      "@ThaisBueno @GustavoJJPrado @671904606 (Alinne) @598709123 (Denys Aurélio) @636091213 (Luiz Godinho) @SayuriArake "
+      "ATENÇÃO COMPANHEIRAS E COMPANHEIROS! @ThaisBueno @GustavoJJPrado @AlinneBarrozo @SayuriArake @636091213 (Luiz Godinho) @598709123 (Denys Aurélio) "
     );
   }
 
