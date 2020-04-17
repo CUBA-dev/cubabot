@@ -64,7 +64,6 @@ class KOTController extends TelegramBaseController {
 
   alinneAction(scope) {
     scope.sendMessage("Pq manda áudio, @AlinneBarrozo? 🎙🎙🎙");
-    gu;
   }
 
   denysAction(scope) {
@@ -79,6 +78,16 @@ class KOTController extends TelegramBaseController {
     );
   }
 
+  thaisAction(scope) {
+    scope.sendMessage("@ThaisBueno está com sono às 19 horas 😴😴😴😴");
+  }
+
+  corongaAction(scope) {
+    scope.sendMessage(
+      "Nem precisei sair de casa pra ganhar do @LuizGodinho! 💻💻💻"
+    );
+  }
+
   get routes() {
     return {
       kot: "kotAction",
@@ -90,7 +99,9 @@ class KOTController extends TelegramBaseController {
       sayurando: "sayurandoAction",
       alinne: "alinneAction",
       denys: "denysAction",
-      luiz: "luizAction"
+      luiz: "luizAction",
+      thais: "thaisAction",
+      coronga: "corongaAction"
     };
   }
 }
@@ -115,6 +126,31 @@ chatbot.router.when(
 );
 chatbot.router.when(new TextCommand("/alinne", "alinne"), new KOTController());
 chatbot.router.when(new TextCommand("/denys", "denys"), new KOTController());
+chatbot.router.when(new TextCommand("/luiz", "luiz"), new KOTController());
+chatbot.router.when(new TextCommand("/thais", "thais"), new KOTController());
+chatbot.router.when(
+  new TextCommand("/coronga", "coronga"),
+  new KOTController()
+);
 
 // https://www.sitepoint.com/how-to-build-your-first-telegram-chatbot-with-node-js/
 // https://github.com/everyone-bot/everyone-bot
+
+/*
+Bot Father
+
+
+kot - Frases de CUBA
+git - Repositório deste projeto maravilhoso
+all - Lista de frases completa.
+5serie - Reações maduras dos membros de CUBA
+companheiros - chame a galera
+gustavando - reação para quando o gustavo reclama de vai perder no jogo, ou seja, todo jogo.
+sayurando - reação para quando a sayuri está demorando pra jogar
+alinne - reação para quando a alinne manda áudio
+denys - reação para quando faz muito tempo que o denys não joga com a gente, ou seja, sempre.
+luiz - reação para quando o luiz diz que comprou um novo jogo
+thais - reação pra quando thais tá com sono
+coronga - reação para jogatinas online
+
+*/
