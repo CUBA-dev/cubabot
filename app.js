@@ -43,8 +43,12 @@ class KOTController extends TelegramBaseController {
     );
   }
 
-  quintaSerieAction(scope){
-    scope.sendMessage("Ahhhh não, eu não deixavaaaaa");
+  quintaSerieAction(scope) {
+    scope.sendMessage("Ahhhh não, eu não deixavaaaaa 😨😨😨😨");
+  }
+
+  companheirosAction(scope) {
+    scope.sendMessage("Trabalhadores do mundo, uni-vos!");
   }
 
   get routes() {
@@ -52,12 +56,21 @@ class KOTController extends TelegramBaseController {
       kot: "kotAction",
       all: "AllKotAction",
       git: "gitAction",
-      quintaserie: "quintaSerieAction"
+      quintaserie: "quintaSerieAction",
+      companheiros: "companheirosAction"
     };
   }
 }
 chatbot.router.when(new TextCommand("/kot", "kot"), new KOTController());
 chatbot.router.when(new TextCommand("/all", "all"), new KOTController());
 chatbot.router.when(new TextCommand("/git", "git"), new KOTController());
-chatbot.router.when(new TextCommand("/5serie", "quintaserie"), new KOTController());
+chatbot.router.when(
+  new TextCommand("/5serie", "quintaserie"),
+  new KOTController()
+);
+chatbot.router.when(
+  new TextCommand("/companheiros", "companheiros"),
+  new KOTController()
+);
 
+// https://github.com/everyone-bot/everyone-bot
