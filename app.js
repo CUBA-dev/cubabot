@@ -23,7 +23,8 @@ const msg = [
   "Vou perder, a sorte não está comigo 😰😰😰 - Gustavo, 97 pontos de vitória.",
   "Não consigo te ouvir aqui do terceiro lugar ¯\\_(ツ)_/¯",
   "GURPS é ruim demais!",
-  "Sayuri não TEM competência pra jogar GURPS"
+  "Sayuri não TEM competência pra jogar GURPS",
+  "Gustavo tá gustavando."
 ];
 
 const chatbot = new Telegram.Telegram(process.env.TOKEN);
@@ -48,7 +49,9 @@ class KOTController extends TelegramBaseController {
   }
 
   companheirosAction(scope) {
-    scope.sendMessage("Trabalhadores do mundo, uni-vos!");
+    scope.sendMessage(
+      "@ThaisBueno @GustavoJJPrado @671904606 (Alinne) @598709123 (Denys Aurélio) @636091213 (Luiz Godinho) @SayuriArake "
+    );
   }
 
   get routes() {
