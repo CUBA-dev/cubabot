@@ -145,7 +145,7 @@ git - Repositório deste projeto maravilhoso
 all - Lista de frases completa.
 5serie - Reações maduras dos membros de CUBA
 companheiros - chame a galera
-gustavando - reação para quando o gustavo reclama de vai perder no jogo, ou seja, todo jogo.
+gustavando - reação para quando o gustavo reclama que vai perder no jogo, ou seja, todo jogo.
 sayurando - reação para quando a sayuri está demorando pra jogar
 alinne - reação para quando a alinne manda áudio
 denys - reação para quando faz muito tempo que o denys não joga com a gente, ou seja, sempre.
