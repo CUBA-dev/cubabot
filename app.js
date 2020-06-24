@@ -88,6 +88,12 @@ class KOTController extends TelegramBaseController {
     );
   }
 
+  podcastAction(scope) {
+    scope.sendMessage(
+      "Ih... lá vem a @AlinneBarrozo gravar um podcast de audio!"
+    );
+  }
+
   get routes() {
     return {
       kot: "kotAction",
@@ -101,6 +107,7 @@ class KOTController extends TelegramBaseController {
       denys: "denysAction",
       luiz: "luizAction",
       thais: "thaisAction",
+      podcast: "podcastAction",
       coronga: "corongaAction"
     };
   }
@@ -128,6 +135,7 @@ chatbot.router.when(new TextCommand("/alinne", "alinne"), new KOTController());
 chatbot.router.when(new TextCommand("/denys", "denys"), new KOTController());
 chatbot.router.when(new TextCommand("/luiz", "luiz"), new KOTController());
 chatbot.router.when(new TextCommand("/thais", "thais"), new KOTController());
+chatbot.router.when(new TextCommand("/podcast", "podcast"), new KOTController());
 chatbot.router.when(
   new TextCommand("/coronga", "coronga"),
   new KOTController()
@@ -152,5 +160,6 @@ denys - reação para quando faz muito tempo que o denys não joga com a gente, 
 luiz - reação para quando o luiz diz que comprou um novo jogo
 thais - reação pra quando thais tá com sono
 coronga - reação para jogatinas online
+podcast - reação para audios da Alinne
 
 */
