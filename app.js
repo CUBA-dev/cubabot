@@ -119,35 +119,21 @@ class KOTController extends TelegramBaseController {
     };
   }
 }
+
 chatbot.router.when(new TextCommand("/kot", "kot"), new KOTController());
 chatbot.router.when(new TextCommand("/all", "all"), new KOTController());
 chatbot.router.when(new TextCommand("/git", "git"), new KOTController());
-chatbot.router.when(
-  new TextCommand("/5serie", "quintaserie"),
-  new KOTController()
-);
-chatbot.router.when(
-  new TextCommand("/companheiros", "companheiros"),
-  new KOTController()
-);
-chatbot.router.when(
-  new TextCommand("/gustavando", "gustavando"),
-  new KOTController()
-);
-chatbot.router.when(
-  new TextCommand("/sayurando", "sayurando"),
-  new KOTController()
-);
+chatbot.router.when(new TextCommand("/5serie", "quintaserie"), new KOTController());
+chatbot.router.when(new TextCommand("/companheiros", "companheiros"), new KOTController());
+chatbot.router.when(new TextCommand("/gustavando", "gustavando"), new KOTController());
+chatbot.router.when(new TextCommand("/sayurando", "sayurando"), new KOTController());
 chatbot.router.when(new TextCommand("/alinne", "alinne"), new KOTController());
 chatbot.router.when(new TextCommand("/denys", "denys"), new KOTController());
 chatbot.router.when(new TextCommand("/luiz", "luiz"), new KOTController());
 chatbot.router.when(new TextCommand("/thais", "thais"), new KOTController());
 chatbot.router.when(new TextCommand("/podcast", "podcast"), new KOTController());
-chatbot.router.when(new TextCommand("/assemble", "podcast"), new KOTController());
-chatbot.router.when(
-  new TextCommand("/coronga", "coronga"),
-  new KOTController()
-);
+chatbot.router.when(new TextCommand("/assemble", "assemble"), new KOTController());
+chatbot.router.when(new TextCommand("/coronga", "coronga"), new KOTController());
 
 // https://www.sitepoint.com/how-to-build-your-first-telegram-chatbot-with-node-js/
 // https://github.com/everyone-bot/everyone-bot
