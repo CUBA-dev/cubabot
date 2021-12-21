@@ -55,7 +55,7 @@ class KOTController extends TelegramBaseController {
   }
 
   gustavandoAction(scope) {
-    scope.sendMessage("@GustavoJJPrado tá Gustavando...");
+    scope.sendMessage("@GustavoJJPrado tá Gustavando...😭🏆🏆🏆");
   }
 
   sayurandoAction(scope) {
@@ -155,5 +155,5 @@ luiz - reação para quando o luiz diz que comprou um novo jogo
 thais - reação pra quando thais tá com sono
 coronga - reação para jogatinas online
 podcast - reação para audios da Alinne
-
+assemble - assemble
 */
