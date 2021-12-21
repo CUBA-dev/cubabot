@@ -94,6 +94,12 @@ class KOTController extends TelegramBaseController {
     );
   }
 
+  assembleAction(scope) {
+    scope.sendMessage(
+      "https://imgur.com/iV7QO7u"
+    );
+  }
+
   get routes() {
     return {
       kot: "kotAction",
@@ -108,6 +114,7 @@ class KOTController extends TelegramBaseController {
       luiz: "luizAction",
       thais: "thaisAction",
       podcast: "podcastAction",
+      assemble: "assembleAction",
       coronga: "corongaAction"
     };
   }
@@ -136,6 +143,7 @@ chatbot.router.when(new TextCommand("/denys", "denys"), new KOTController());
 chatbot.router.when(new TextCommand("/luiz", "luiz"), new KOTController());
 chatbot.router.when(new TextCommand("/thais", "thais"), new KOTController());
 chatbot.router.when(new TextCommand("/podcast", "podcast"), new KOTController());
+chatbot.router.when(new TextCommand("/assemble", "podcast"), new KOTController());
 chatbot.router.when(
   new TextCommand("/coronga", "coronga"),
   new KOTController()
